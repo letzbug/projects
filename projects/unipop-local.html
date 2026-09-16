@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>UniPop Local — Frank G.</title>
+<meta name="description" content="A centrally managed digital signage platform for presenting current UniPop courses across multiple locations, combining course data, media, QR codes and local display systems.">
+<meta name="theme-color" content="#04050B">
+<meta property="og:title" content="UniPop Local — Frank G.">
+<meta property="og:description" content="A centrally managed digital signage platform for presenting current UniPop courses across multiple locations, combining course data, media, QR codes and local display systems.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain"></div>
+<div class="prog" id="prog"></div>
+<nav class="nav"><div class="navin">
+  <div class="pill">
+    <a class="lg" href="../index.html">FRANK G.</a>
+    <a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a>
+    <a class="go" href="../index.html#contact">Start a project</a>
+  </div>
+  <div class="chip"><span class="dt"></span>18 builds · Luxembourg</div>
+</div></nav>
+<main id="main">
+<header class="phero shot">
+  <div class="bgimg"><img data-par="hero" src="../assets/images/projects/local.jpg" alt="UniPop Signage"></div>
+  <div class="scrim"></div><div class="spot" id="spot"></div>
+  <div class="wrap">
+    <a class="back" href="../index.html#work">← All projects</a>
+    <div class="kick">UNIPOP · DIGITAL SIGNAGE · WEB</div>
+    <h1>UniPop Local</h1>
+    <p class="lead">A centrally managed digital signage platform for presenting current UniPop courses across multiple locations, combining course data, media, QR codes and local display systems.</p>
+    
+  </div>
+</header>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Overview</h2>
+  <div class="body rv">
+<p>UniPop Signage is a complete digital signage system created to present current courses and information on screens installed at different UniPop locations.</p>
+<p>Instead of maintaining every display separately, the system uses a central web-based builder where courses can be selected, images assigned and individual playlists created for each location.</p>
+<p>The connected display devices automatically show the content assigned to them, creating a centrally managed communication system that can be updated without physically accessing the screens.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Project details</h2>
+  <div class="body rv">
+<p>The main objective was to replace a traditional static signage workflow with a flexible system that uses the existing UniPop course data as its central information source.</p>
+<p>The signage builder loads current course information and makes it possible to search and select courses for individual display locations. Each screen can have its own playlist, allowing the content to be adapted to the audience and location where the display is installed.</p>
+<p>Course information such as title, date, location and description is combined automatically with an individual image and a QR code. Visitors can therefore discover a course directly on the screen and scan the QR code to access the corresponding online information.</p>
+<p>The system was designed not only as a slideshow but as a complete content-management workflow. Playlists can be modified remotely, course images can be updated and new display locations can be added without rebuilding the complete application.</p>
+<div class="fcards">
+  <div class="fc rv"><h3>Central playlist builder</h3><p>A web-based control interface allows courses to be selected, arranged and assigned to individual signage locations.</p></div>
+  <div class="fc rv"><h3>Multiple locations</h3><p>Each display can receive its own playlist, allowing different course selections to be shown at different UniPop sites.</p></div>
+  <div class="fc rv"><h3>Course database integration</h3><p>Current course information is loaded from the UniPop course data source instead of being entered manually for each screen.</p></div>
+  <div class="fc rv"><h3>Dynamic QR codes</h3><p>Each displayed course includes a QR code that gives visitors direct access to the corresponding course information.</p></div>
+  <div class="fc rv"><h3>Remote content updates</h3><p>Playlist changes and new course selections can be published centrally without physically accessing the display computer.</p></div>
+  <div class="fc rv"><h3>Raspberry Pi displays</h3><p>Compact Raspberry Pi systems can operate as dedicated fullscreen display clients connected directly to the signage screens.</p></div>
+  <div class="fc rv"><h3>Integrated printing</h3><p>The system can also generate a physical course flyer directly from the displayed information, extending the digital signage workflow into print.</p></div>
+  <div class="fc rv"><h3>Statistics &amp; monitoring</h3><p>Print activity and display status can be monitored, providing additional information about the use of the individual signage stations.</p></div>
+</div>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Technology</h2>
+  <div class="body rv">
+<p>UniPop Signage is built as a browser-based distributed system using HTML, CSS and JavaScript for both the management interface and the individual display pages.</p>
+<p>Structured course data provides the content displayed by the system. The builder combines this information with uploaded images, playlist configuration and automatically generated QR codes.</p>
+<p>Supabase is used for central data storage and synchronisation. Playlist information and associated media can therefore be shared between the management interface and the individual signage displays without requiring a traditional local server.</p>
+<p>At the display locations, Raspberry Pi systems can operate in fullscreen kiosk mode. After startup, each device automatically loads the display page assigned to its location and continuously presents the corresponding playlist.</p>
+<div class="chips"><span class="tc">JavaScript</span><span class="tc">HTML</span><span class="tc">CSS</span><span class="tc">Supabase</span><span class="tc">JSON</span><span class="tc">Course Database</span><span class="tc">Raspberry Pi</span><span class="tc">Kiosk Display</span><span class="tc">QR Codes</span><span class="tc">Dynamic Playlists</span><span class="tc">Image Storage</span><span class="tc">Print System</span><span class="tc">Responsive Web UI</span></div>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Media &amp; demo</h2>
+  <div class="body rv">
+<p>The screenshots below show the complete UniPop Signage workflow: from selecting current courses and building location-specific playlists to the final fullscreen presentation on the signage displays.</p>
+<p>The examples can include the central builder, course selection, playlist management, screen preview, the final display interface, QR-code integration and the physical print function.</p>
+<p>UniPop Signage — project screenshots</p>
+  </div>
+</div></section>
+<section class="gal">
+  <div class="strip" aria-label="Project images">
+    <figure><img loading="lazy" src="../assets/images/projects/signage/signage-01.jpg" alt="UniPop Signage builder"><figcaption>UniPop Signage builder</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/signage/signage-02.jpg" alt="UniPop Signage course selection"><figcaption>UniPop Signage course selection</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/signage/signage-03.jpg" alt="UniPop Signage playlist management"><figcaption>UniPop Signage playlist management</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/signage/signage-04.jpg" alt="UniPop Signage display preview"><figcaption>UniPop Signage display preview</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/signage/signage-05.jpg" alt="UniPop Signage fullscreen display"><figcaption>UniPop Signage fullscreen display</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/signage/signage-06.jpg" alt="UniPop Signage printing and QR workflow"><figcaption>UniPop Signage printing and QR workflow</figcaption></figure>
+  </div>
+</section>
+<nav class="pn">
+  <a href="newsletter-tool.html"><span>← PREVIOUS</span><strong>Newsletter Tool</strong></a>
+  <a href="unipop-live.html"><span>NEXT →</span><strong>UniPop Live</strong></a>
+</nav>
+
+<section class="end">
+  <div class="endglow"></div>
+  <div class="wrap">
+    <h2 class="rv">Got something that shouldn't work either?</h2>
+    <div class="endrow rv">
+      <p>Luxembourg · hardware, AI, audio and event-tech builds</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="p1" href="https://www.linkedin.com/in/frank-glaesener-8b4789171">LinkedIn</a>
+        <a class="p2" href="https://www.instagram.com/frankglaesener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">
+  <span>© 2026 Frank G. — Luxembourg</span><span>Built with curiosity and a lot of cable.</span>
+</div></footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Jukebox Bluetooth Project — Frank G.</title>
+<meta name="description" content="A Bluetooth audio upgrade for classic jukeboxes that preserves the original record playback and automatically gives the jukebox priority whenever a record starts.">
+<meta name="theme-color" content="#04050B">
+<meta property="og:title" content="Jukebox Bluetooth Project — Frank G.">
+<meta property="og:description" content="A Bluetooth audio upgrade for classic jukeboxes that preserves the original record playback and automatically gives the jukebox priority whenever a record starts.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain"></div>
+<div class="prog" id="prog"></div>
+<nav class="nav"><div class="navin">
+  <div class="pill">
+    <a class="lg" href="../index.html">FRANK G.</a>
+    <a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a>
+    <a class="go" href="../index.html#contact">Start a project</a>
+  </div>
+  <div class="chip"><span class="dt"></span>18 builds · Luxembourg</div>
+</div></nav>
+<main id="main">
+<header class="phero">
+  <div class="bgimg"><img data-par="hero" src="../assets/images/projects/jukebox-bluetooth.jpg" alt="Jukebox Bluetooth Project"></div>
+  <div class="scrim"></div><div class="spot" id="spot"></div>
+  <div class="wrap">
+    <a class="back" href="../index.html#work">← All projects</a>
+    <div class="kick">HARDWARE · AUDIO · RASPBERRY PI · ELECTRONICS</div>
+    <h1>Jukebox Bluetooth Project</h1>
+    <p class="lead">A Bluetooth audio upgrade for classic jukeboxes that preserves the original record playback and automatically gives the jukebox priority whenever a record starts.</p>
+    
+  </div>
+</header>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Overview</h2>
+  <div class="body rv">
+<p>The Jukebox Bluetooth Project explores how modern wireless audio can be integrated into a classic jukebox without changing the character or normal operation of the original machine.</p>
+<p>The goal is to allow music from a phone or another Bluetooth device to use the jukebox&#x27;s existing loudspeakers whenever the machine is idle.</p>
+<p>As soon as the jukebox begins playing a record, the system automatically switches the loudspeakers back to the original jukebox audio. Record playback always has priority.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Project details</h2>
+  <div class="body rv">
+<p>The main challenge was to add Bluetooth functionality without requiring the user to operate additional switches or manually select between modern audio and the original jukebox.</p>
+<p>A Raspberry Pi Zero acts as the central controller of the system. It handles Bluetooth audio and continuously monitors whether the original jukebox is producing an audio signal or entering its playback state.</p>
+<p>When the jukebox is idle, the system routes Bluetooth audio to the existing loudspeaker installation. The jukebox can therefore be used like a normal Bluetooth speaker while keeping all of its original mechanical functions intact.</p>
+<p>Once a record is selected and the jukebox starts playback, the controller detects this condition and activates the relay switching system. The Bluetooth source is disconnected and the original jukebox amplifier receives full priority.</p>
+<p>After the record has finished and the original signal disappears, the system can return automatically to Bluetooth operation.</p>
+<div class="fcards">
+  <div class="fc rv"><h3>Bluetooth audio</h3><p>Phones and other Bluetooth devices can use the original jukebox loudspeakers while the machine is not playing a record.</p></div>
+  <div class="fc rv"><h3>Automatic source switching</h3><p>No manual selector is required. The system automatically changes between Bluetooth and the original jukebox audio.</p></div>
+  <div class="fc rv"><h3>Record priority</h3><p>Whenever the jukebox begins playing a record, its original audio immediately receives priority over the Bluetooth source.</p></div>
+  <div class="fc rv"><h3>Line sensing</h3><p>The controller monitors the jukebox audio or playback state to determine when the original machine is active.</p></div>
+  <div class="fc rv"><h3>Relay switching</h3><p>Audio relays physically switch the loudspeaker path between the jukebox amplifier and the Bluetooth audio system.</p></div>
+  <div class="fc rv"><h3>Original hardware preserved</h3><p>The concept is designed as an add-on so that the jukebox can continue to operate normally with records and its original controls.</p></div>
+</div>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Switching concept</h2>
+  <div class="body rv">
+<p>The system operates around a simple priority rule: the original jukebox always wins.</p>
+<p>During normal idle operation, the Raspberry Pi provides the Bluetooth source and the relay system connects this signal to the loudspeakers.</p>
+<p>If a record is selected, the line-sensing logic detects the jukebox playback condition. The relays then switch the audio path back to the original amplifier.</p>
+<p>This allows the upgrade to remain almost invisible to the user. Bluetooth is available when needed, but selecting a record automatically restores the traditional jukebox experience.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Technology</h2>
+  <div class="body rv">
+<p>The project is based around a Raspberry Pi Zero combined with Bluetooth audio, signal sensing and a relay-controlled audio switching stage.</p>
+<p>The Raspberry Pi manages the Bluetooth connection and the logic that determines which source should currently be connected to the loudspeakers.</p>
+<p>A line-sensing circuit monitors the original jukebox signal. When activity is detected, the control system drives the relays so that the jukebox audio path is selected.</p>
+<p>The concept is designed to be adaptable to different classic jukebox models while keeping the existing amplifier and speaker system in use.</p>
+<div class="chips"><span class="tc">Raspberry Pi Zero</span><span class="tc">Bluetooth Audio</span><span class="tc">Line Sensing</span><span class="tc">Audio Detection</span><span class="tc">Relay Switching</span><span class="tc">Priority Logic</span><span class="tc">GPIO</span><span class="tc">Linux</span><span class="tc">Python</span><span class="tc">Analog Audio</span><span class="tc">Classic Jukebox</span><span class="tc">Electronics Integration</span></div>
+  </div>
+</div></section>
+<nav class="pn">
+  <a href="soccer-tipp.html"><span>← PREVIOUS</span><strong>GlobeTip 2026</strong></a>
+  <a href="radio-juke.html"><span>NEXT →</span><strong>Radio Jukebox</strong></a>
+</nav>
+
+<section class="end">
+  <div class="endglow"></div>
+  <div class="wrap">
+    <h2 class="rv">Got something that shouldn't work either?</h2>
+    <div class="endrow rv">
+      <p>Luxembourg · hardware, AI, audio and event-tech builds</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="p1" href="https://www.linkedin.com/in/frank-glaesener-8b4789171">LinkedIn</a>
+        <a class="p2" href="https://www.instagram.com/frankglaesener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">
+  <span>© 2026 Frank G. — Luxembourg</span><span>Built with curiosity and a lot of cable.</span>
+</div></footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>

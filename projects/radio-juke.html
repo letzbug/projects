@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Radio Jukebox — Frank G.</title>
+<meta name="description" content="A classic jukebox transformed into an interactive event machine, combining original mechanical controls with digital audio, prize logic, DMX lighting and a configurable web applica">
+<meta name="theme-color" content="#04050B">
+<meta property="og:title" content="Radio Jukebox — Frank G.">
+<meta property="og:description" content="A classic jukebox transformed into an interactive event machine, combining original mechanical controls with digital audio, prize logic, DMX lighting and a configurable web applica">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain"></div>
+<div class="prog" id="prog"></div>
+<nav class="nav"><div class="navin">
+  <div class="pill">
+    <a class="lg" href="../index.html">FRANK G.</a>
+    <a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a>
+    <a class="go" href="../index.html#contact">Start a project</a>
+  </div>
+  <div class="chip"><span class="dt"></span>18 builds · Luxembourg</div>
+</div></nav>
+<main id="main">
+<header class="phero">
+  <div class="bgimg"><img data-par="hero" src="../assets/images/projects/radio-juke.jpg" alt="Radio Jukebox"></div>
+  <div class="scrim"></div><div class="spot" id="spot"></div>
+  <div class="wrap">
+    <a class="back" href="../index.html#work">← All projects</a>
+    <div class="kick">EVENT TECH · HARDWARE · WEB APP · DMX</div>
+    <h1>Radio Jukebox</h1>
+    <p class="lead">A classic jukebox transformed into an interactive event machine, combining original mechanical controls with digital audio, prize logic, DMX lighting and a configurable web application.</p>
+    <div class="badge wip"><span class="dt"></span>CURRENTLY IN DEVELOPMENT</div>
+  </div>
+</header>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Overview</h2>
+  <div class="body rv">
+<p>Radio Jukebox is an interactive event installation based on a real classic jukebox.</p>
+<p>Instead of simply selecting a record, visitors use the original jukebox buttons to trigger a digital experience. Depending on the programmed configuration, a selection can play a predefined song or station jingle, or trigger a winning sequence with audio and lighting effects.</p>
+<p>The original physical interaction remains an important part of the experience: visitors still stand in front of a real jukebox and make their selection using its original controls, while a completely new electronic system works behind the scenes.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Project details</h2>
+  <div class="body rv">
+<p>The objective is to turn a classic jukebox into a flexible interactive attraction for radio events, public appearances, fairs and promotional activities.</p>
+<p>The original selection buttons are connected to custom interface electronics. Their input is interpreted digitally so that each button combination can be assigned to an individual action.</p>
+<p>A selection might simply start a specific song or jingle. Other selections can be configured as winning combinations. When a winning choice is detected, the system plays a dedicated audio cue and starts a programmed lighting effect inside the jukebox.</p>
+<p>DMX is integrated directly into the project. This allows the jukebox lighting to become part of the interaction rather than remaining static.</p>
+<p>An external DMX output also makes it possible to control additional event lighting outside the jukebox. A winning event could therefore trigger not only the lights inside the machine, but also moving lights, LED fixtures or other DMX-compatible equipment around the event stand.</p>
+<div class="fcards">
+  <div class="fc rv"><h3>Original jukebox controls</h3><p>The existing selection buttons remain the main user interface and are translated into digital commands by custom electronics.</p></div>
+  <div class="fc rv"><h3>Programmable selections</h3><p>Each jukebox selection can be assigned to a song, jingle, event action or other predefined media content.</p></div>
+  <div class="fc rv"><h3>Prize logic</h3><p>Individual combinations can be defined as winning selections so that the jukebox also works like an interactive slot machine.</p></div>
+  <div class="fc rv"><h3>Audio feedback</h3><p>Winning events can trigger dedicated jingles, voice messages or other audio cues through the internal audio system.</p></div>
+  <div class="fc rv"><h3>Internal DMX lighting</h3><p>Lighting effects inside the jukebox can react to selections and create a dedicated celebration sequence when someone wins.</p></div>
+  <div class="fc rv"><h3>External DMX output</h3><p>Additional event lights can be connected so that the complete surrounding installation reacts to the jukebox.</p></div>
+  <div class="fc rv"><h3>Web configuration</h3><p>A dedicated local web application allows event staff to assign songs, jingles, prizes and lighting sequences without modifying the underlying software.</p></div>
+  <div class="fc rv"><h3>Offline operation</h3><p>The installation is designed to operate independently from the internet, making it suitable for event locations with unreliable or unavailable connectivity.</p></div>
+</div>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">System architecture</h2>
+  <div class="body rv">
+<p>The system is planned around two separate control layers.</p>
+<p>A Linux-based mini PC acts as the central application computer. It handles audio playback, the local web interface, event logic, media storage and configuration.</p>
+<p>A separate microcontroller-based I/O interface handles the original jukebox buttons and other physical signals. This keeps the time-critical hardware input independent from the operating system and provides a more reliable interface to the vintage electronics.</p>
+<p>Communication between the microcontroller and the mini PC can be handled over USB serial. The mini PC receives a clean digital selection code rather than having to read the jukebox wiring directly.</p>
+<p>This separation also makes troubleshooting easier: the hardware interface, application logic, audio system and lighting system can be tested independently.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Configuration &amp; operation</h2>
+  <div class="body rv">
+<p>The complete event setup can be programmed through a dedicated web application.</p>
+<p>During configuration, the operator can assign media files to jukebox selections, define winning combinations and select which DMX scene should be triggered for each event.</p>
+<p>The system can provide its own local Wi-Fi network. Event staff can connect a laptop, tablet or phone directly to the jukebox and open the configuration interface in a browser.</p>
+<p>A second workflow is planned through USB. A prepared USB drive can contain new media files and configuration data, allowing the jukebox to be updated without requiring network access.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Technology</h2>
+  <div class="body rv">
+<p>The central system is planned around a compact Linux mini PC. Compared with a small microcontroller or Raspberry Pi alone, the mini PC provides sufficient performance and storage for audio, web applications, configuration management and future extensions.</p>
+<p>A dedicated Arduino or ESP32-class controller can handle the original jukebox inputs and communicate with the Linux system over USB or serial.</p>
+<p>For DMX, a dedicated USB-to-DMX interface can provide reliable output to both the internal jukebox lighting and the external DMX connector.</p>
+<p>The software architecture can remain modular: the web interface controls the configuration, the playback engine handles audio, the hardware service receives button selections and the lighting service sends the appropriate DMX scene.</p>
+<div class="chips"><span class="tc">Linux Mini PC</span><span class="tc">Arduino / ESP32</span><span class="tc">USB Serial</span><span class="tc">Custom I/O</span><span class="tc">DMX512</span><span class="tc">USB-DMX</span><span class="tc">Audio Playback</span><span class="tc">JavaScript</span><span class="tc">HTML</span><span class="tc">CSS</span><span class="tc">Local Web App</span><span class="tc">Wi-Fi Access Point</span><span class="tc">USB Configuration</span><span class="tc">Event Automation</span><span class="tc">Prize Logic</span></div>
+  </div>
+</div></section>
+<nav class="pn">
+  <a href="jukebox-bluetooth.html"><span>← PREVIOUS</span><strong>Jukebox Bluetooth Project</strong></a>
+  <a href="organ-1900.html"><span>NEXT →</span><strong>Decap Orchestrion</strong></a>
+</nav>
+
+<section class="end">
+  <div class="endglow"></div>
+  <div class="wrap">
+    <h2 class="rv">Got something that shouldn't work either?</h2>
+    <div class="endrow rv">
+      <p>Luxembourg · hardware, AI, audio and event-tech builds</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="p1" href="https://www.linkedin.com/in/frank-glaesener-8b4789171">LinkedIn</a>
+        <a class="p2" href="https://www.instagram.com/frankglaesener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">
+  <span>© 2026 Frank G. — Luxembourg</span><span>Built with curiosity and a lot of cable.</span>
+</div></footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
