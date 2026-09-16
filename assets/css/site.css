@@ -180,9 +180,26 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
  padding-bottom:clamp(50px,7vh,84px)}
 .phero .bgimg{position:absolute;inset:0}
 .phero .bgimg img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);animation:kb 18s ease-out forwards}
-.phero.shot .bgimg img{filter:blur(30px) saturate(1.35);opacity:.55;transform:scale(1.25);animation:none}
-.phero.shot::before{content:"";position:absolute;inset:0;z-index:2;
- background:radial-gradient(90% 70% at 78% 18%,rgba(76,123,255,.22),transparent 62%)}
+.phero.shot .bgimg img{filter:blur(2px) saturate(1.12);opacity:.85;object-position:top center}
+.phero.shot .scrim{background:
+ linear-gradient(180deg,rgba(4,5,11,.7) 0%,rgba(4,5,11,.5) 26%,rgba(4,5,11,.86) 62%,var(--bg) 100%),
+ linear-gradient(95deg,rgba(4,5,11,.94) 0%,rgba(4,5,11,.8) 30%,rgba(4,5,11,.5) 62%,rgba(4,5,11,.28) 100%)}
+
+/* the work, shown sharp — always centred, width follows the image's own shape */
+.show{border-top:1px solid var(--line);padding:clamp(54px,8vh,92px) 0}
+.show .kick{margin-bottom:16px;text-align:center}
+.show figure{margin:0 auto;width:100%}
+.frame{position:relative;border-radius:18px;overflow:hidden;border:1px solid var(--line);
+ background:linear-gradient(170deg,#0E1120,#07080F);box-shadow:0 40px 90px rgba(0,0,0,.6);margin:0 auto}
+.frame .bar{display:flex;gap:7px;padding:13px 16px;border-bottom:1px solid var(--line);background:rgba(255,255,255,.03)}
+.frame .bar i{width:10px;height:10px;border-radius:50%;background:rgba(255,255,255,.18)}
+.frame img{width:100%;height:auto;display:block}
+.frame.w-wide{max-width:1100px}
+.frame.w-mid {max-width:900px}
+.frame.w-sq  {max-width:700px}
+.frame.w-tall{max-width:480px}
+.show figcaption{margin:16px auto 0;color:var(--dim);font-size:13.5px;line-height:1.55;
+ max-width:58ch;text-align:center}
 .phero .wrap{position:relative;z-index:4;width:100%}
 .back{display:inline-flex;align-items:center;gap:9px;font-size:13px;color:#A3ABC0;margin-bottom:26px;transition:gap .2s}
 .back:hover{gap:15px;color:#fff}
