@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lumetta — Frank G.</title>
+<meta name="description" content="Lumetta is an AI-powered personalised storytelling experience for children, creating age-aware stories from their interests and turning them into illustrated, narrated adventures.">
+<meta name="theme-color" content="#04050B">
+<meta property="og:title" content="Lumetta — Frank G.">
+<meta property="og:description" content="Personalised children's stories generated, illustrated and narrated with AI.">
+<meta property="og:image" content="../assets/images/projects/lumetta-main.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@75..125,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="grain"></div>
+<div class="prog" id="prog"></div>
+<nav class="nav"><div class="navin">
+  <div class="pill">
+    <a class="lg" href="../index.html">FRANK G.</a>
+    <a href="../index.html#work">Work</a><a href="../index.html#about">About</a><a href="../index.html#contact">Contact</a>
+    <a class="go" href="../index.html#contact">Start a project</a>
+  </div>
+  <div class="chip"><span class="dt"></span>19 builds · Luxembourg</div>
+</div></nav>
+<main id="main">
+<header class="phero">
+  <div class="bgimg"><img data-par="hero" src="../assets/images/projects/lumetta-main.png" alt="Lumetta personalised storytelling interface"></div>
+  <div class="scrim"></div><div class="spot" id="spot"></div>
+  <div class="wrap">
+    <a class="back" href="../index.html#work">← All projects</a>
+    <div class="kick">AI · CHILDREN · STORYTELLING · WEB APP</div>
+    <h1>Lumetta</h1>
+    <p class="lead">A personalised storytelling experience that turns a child’s age, interests and imagination into an illustrated adventure — then tells it aloud with expressive AI narration.</p>
+    <a class="extlink" href="https://letzbug.github.io/lumetta/" target="_blank" rel="noopener">Open the live Lumetta beta ↗</a>
+  </div>
+</header>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Overview</h2>
+  <div class="body rv">
+<p>Lumetta explores a simple idea: a children’s story becomes more meaningful when it feels as though it was made specifically for the child listening to it.</p>
+<p>Instead of choosing from a fixed library, a parent or educator gives Lumetta a few ingredients — the child’s age, optional first name, interests and the kind of story they would enjoy. Lumetta then creates a complete short adventure around those choices.</p>
+<p>The result is not only text. The experience also creates a visual world around the story and can narrate it aloud, turning the browser into a small personalised storybook.</p>
+<p>The original concept grew from an idea by Andreas Rhein and was developed into the working Lumetta prototype by Frank G.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">How it works</h2>
+  <div class="body rv">
+<p>The flow is deliberately simple. A parent starts with the child rather than with technology: age, name if desired, favourite topics and a preferred kind of story.</p>
+<p>Lumetta can then gently shape the adventure around a theme such as confidence, making friends, trying something new or understanding feelings. This layer is optional; choosing “Just a story” leaves the experience purely imaginative.</p>
+<div class="fcards">
+  <div class="fc rv"><h3>Age-aware stories</h3><p>Language, pacing and story complexity are adapted to the selected age rather than using the same text for every child.</p></div>
+  <div class="fc rv"><h3>Personal interests</h3><p>Dinosaurs, space, animals, pirates, music, science or completely free-form ideas can become the ingredients of the adventure.</p></div>
+  <div class="fc rv"><h3>Story styles</h3><p>Adventure, funny, calm, magical, discovery and bedtime modes give the generated story a clear emotional direction.</p></div>
+  <div class="fc rv"><h3>Gentle guidance</h3><p>Optional themes can weave social or emotional situations naturally into the story without turning it into a lesson or diagnosis.</p></div>
+  <div class="fc rv"><h3>AI illustration</h3><p>A generated cover image gives each story its own visual identity and makes the result feel like a real little book.</p></div>
+  <div class="fc rv"><h3>Spoken narration</h3><p>Expressive text-to-speech reads the story aloud while the child can follow the text on screen.</p></div>
+</div>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">The experience</h2>
+  <div class="body rv">
+<p>The interface was designed to feel calm, warm and approachable rather than like an AI tool. Parents move through four short steps, while Lumetta’s small glowing character acts as a visual guide through the process.</p>
+<p>Once the story is ready, the layout changes into a reading view with cover artwork, title, child name, estimated duration, narration controls and the story itself. During playback, the current sentence can be highlighted so listening and reading stay connected.</p>
+<p>The target is a compact story of roughly three to four minutes: long enough to create a real beginning, middle and ending, but short enough to work as a bedtime story, classroom activity or spontaneous moment together.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">AI &amp; technology</h2>
+  <div class="body rv">
+<p>Lumetta combines several AI services behind one intentionally simple interface. Story generation is handled separately from image creation and voice narration so that each part of the experience can use the model best suited to it.</p>
+<p>The current beta uses Mistral for story generation and xAI services for image generation and text-to-speech. A Cloudflare Worker provides the API layer between the public web application and the external AI services, keeping service credentials away from the browser.</p>
+<p>The front end is deployed as a lightweight GitHub Pages application and is designed to work on phones, tablets and desktop computers without requiring an account.</p>
+<div class="chips"><span class="tc">Mistral AI</span><span class="tc">xAI</span><span class="tc">AI Story Generation</span><span class="tc">Text-to-Speech</span><span class="tc">Image Generation</span><span class="tc">Cloudflare Workers</span><span class="tc">GitHub Pages</span><span class="tc">Responsive Web UI</span><span class="tc">Multilingual</span><span class="tc">Child-centred UX</span></div>
+<a class="extlink" href="https://letzbug.github.io/lumetta/" target="_blank" rel="noopener">Try Lumetta ↗</a>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Design principles</h2>
+  <div class="body rv">
+<p>Lumetta was designed around a few constraints that are easy to say and surprisingly difficult to combine: it should feel magical without becoming noisy, personal without demanding an account, pedagogically useful without pretending to be therapy, and technologically sophisticated without making the technology the centre of attention.</p>
+<p>The project also treats privacy and data minimisation as product decisions. The interface explicitly avoids requiring an account and keeps the parent-facing flow focused on the minimum information needed to create the story.</p>
+<p>Languages can be selected as part of the story setup, making the same concept useful for family reading, language learning and multilingual environments.</p>
+  </div>
+</div></section>
+<section class="blk"><div class="wrap">
+  <h2 class="rv">Screens</h2>
+  <div class="body rv">
+<p>From the landing page to the final narrated story, the screens below show the complete Lumetta flow: defining the child, choosing interests and story style, optional guidance, story generation and the finished reading experience.</p>
+  </div>
+</div></section>
+<section class="gal">
+  <div class="strip" aria-label="Lumetta project screens">
+    <figure><img loading="lazy" src="../assets/images/projects/lumetta-main.png" alt="Lumetta landing page"><figcaption>Landing page — the story starts with the child, not with the technology.</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/lumetta1.png" alt="Lumetta child profile step"><figcaption>Step 1 — age, optional name and story character preference.</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/lumetta2.png" alt="Lumetta interests step"><figcaption>Step 2 — free-form interests and quick inspiration choices.</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/lumetta3.png" alt="Lumetta story type selection"><figcaption>Step 3 — choose the emotional style of the story.</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/lumetta4.png" alt="Lumetta optional story guidance"><figcaption>Step 4 — optional gentle themes such as confidence, friendship or patience.</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/lumetta5.png" alt="Lumetta generating a story"><figcaption>Story generation — Lumetta builds the adventure.</figcaption></figure>
+    <figure><img loading="lazy" src="../assets/images/projects/lumetta6.png" alt="Lumetta finished story and narration view"><figcaption>The finished story — illustrated, readable and ready to be narrated aloud.</figcaption></figure>
+  </div>
+</section>
+<nav class="pn">
+  <a href="auraframe.html"><span>← PREVIOUS</span><strong>AuraFrame</strong></a>
+  <a href="signage.html"><span>NEXT →</span><strong>UniPop Signage</strong></a>
+</nav>
+<section class="end">
+  <div class="endglow"></div>
+  <div class="wrap">
+    <h2 class="rv">Got something that shouldn't work either?</h2>
+    <div class="endrow rv">
+      <p>Luxembourg · hardware, AI, audio and event-tech builds</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap">
+        <a class="p1" href="https://www.linkedin.com/in/frank-glaesener-8b4789171">LinkedIn</a>
+        <a class="p2" href="https://www.instagram.com/frankglaesener">Instagram</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer><div class="wrap">
+  <span>© 2026 Frank G. — Luxembourg</span><span>Built with curiosity and a lot of cable.</span>
+</div></footer>
+<script src="../assets/js/site.js"></script>
+</body>
+</html>
